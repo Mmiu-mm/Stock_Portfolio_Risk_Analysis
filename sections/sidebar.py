@@ -3,7 +3,7 @@ import streamlit as st
 def render_sidebar():
     with st.sidebar:
         try:
-            st.image(r"D:\final_project\logo\efrei.png", caption="EFREI", width=100, use_container_width=False)
+            st.image(r"D:\final_project\logo\efrei.png", caption="EFREI", width=180, use_container_width=False)
         except Exception as e:
             st.error(f"Could not load EFREI Logo: {e}")
             st.markdown("**EFREI Logo**")
@@ -11,7 +11,7 @@ def render_sidebar():
         st.write("")
             
         try:
-            st.image(r"D:\final_project\logo\WUT-Logo.png", caption="WUT", width=100, use_container_width=False)
+            st.image(r"D:\final_project\logo\WUT.png", caption="WUT", width=180, use_container_width=False)
         except Exception as e:
             st.error(f"Could not load WUT Logo: {e}")
             st.markdown("**WUT Logo**")
