@@ -1,0 +1,24 @@
+**Individual Student Project: Stock Portfolio Risk Analysis System**
+*Mano Joseph Mathew | mano.mathew@efrei.fr*
+`#EFREIDataStoriesWUT2025` `#EFREIParis` `#DataVisualization` `#Streamlit` `#DataStorytelling`
+
+---
+
+## Project Overview
+
+**The Challenge:**
+China's stock market is evolving rapidly, creating complex investment environments. Traditional methods lack systematic risk quantification tools.
+
+**Our Solution:**
+A comprehensive stock portfolio risk analysis system applying modern financial theory to investment decisions.
+
+**Dataset Scope:**
+- **6 Representative A-Shares:** Sanqi Mutual Entertainment, Perfect World, Yongyou Network, Kingsoft Office, ZTE Corporation, Luxshare Precision
+- **Time Coverage:** September 2016 - August 2025
+- **Market Representation:** Cross-industry coverage with varied market capitalizations
+
+**Key Objectives:**
+Build complete portfolio risk analysis system  
+Apply modern portfolio theory to Chinese markets  
+Develop intuitive risk visualization dashboard  
+Provide scientific decision support tools
