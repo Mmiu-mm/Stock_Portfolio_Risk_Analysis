@@ -35,7 +35,7 @@ def load_stock_data():
             else:
                 close_col = df.columns[3]
             
-            df['Returns'] = df[close_col].pct_change().fillna(0)
+            df['Returns'] = df[close_col].pct_change().fillna(0)    #df['Returns'] = df[close_col].pct_change().fillna(0)
             stocks[code] = df
             
         except Exception as e:

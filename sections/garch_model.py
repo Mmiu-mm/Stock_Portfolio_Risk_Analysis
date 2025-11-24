@@ -19,7 +19,7 @@ def fit_garch_models(returns_data):
                 failed_stocks.append(stock)
                 continue
             
-            if returns.std() < 1e-6:
+            if returns.std() < 1e-6:   #calucate std
                 st.warning(f"Returns for {stock} have very low variability")
                 failed_stocks.append(stock)
                 continue
@@ -29,7 +29,7 @@ def fit_garch_models(returns_data):
             model = arch_model(scaled_returns, vol='Garch', p=1, q=1, 
                              mean='Constant', dist='normal')
             
-            result = model.fit(disp='off', show_warning=False, 
+            result = model.fit(disp='off', show_warning=False,       #fit the data
                              options={'maxiter': 1000, 'disp': False})
             
             if result is None or not hasattr(result, 'params'):
@@ -38,7 +38,7 @@ def fit_garch_models(returns_data):
                 continue
                 
             garch_results[stock] = result
-            volatilities[stock] = result.conditional_volatility / 100
+            volatilities[stock] = result.conditional_volatility / 100    #gain the volatility
             
         except Exception as e:
             st.warning(f"GARCH fitting failed for {stock}: {str(e)}")

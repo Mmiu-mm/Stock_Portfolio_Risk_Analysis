@@ -4,8 +4,8 @@ import numpy as np
 import plotly.graph_objects as go
 
 def portfolio_performance(weights, mean_returns, cov_matrix):
-    returns = np.sum(weights * mean_returns)
-    std = np.sqrt(np.dot(weights.T, np.dot(cov_matrix, weights)))
+    returns = np.sum(weights * mean_returns)             #calucate returns
+    std = np.sqrt(np.dot(weights.T, np.dot(cov_matrix, weights)))   #caculate std
     return std, returns
 
 def render_portfolio_optimization(stocks):

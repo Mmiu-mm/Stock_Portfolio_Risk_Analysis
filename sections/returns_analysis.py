@@ -13,7 +13,7 @@ def render_returns_analysis(stocks):
         returns_data[code] = df['Returns']
     
     st.subheader("Cumulative Returns Over Time")
-    cumulative_returns = (1 + returns_data).cumprod()
+    cumulative_returns = (1 + returns_data).cumprod()   #Calculate cumulative returns
     
     fig_returns = go.Figure()
     for column in cumulative_returns.columns:
@@ -34,7 +34,7 @@ def render_returns_analysis(stocks):
     
     st.subheader("Individual Stock Performance Metrics")
     
-    performance_data = []
+    performance_data = []      #Calculation Metrics
     for code in stocks.keys():
         returns = returns_data[code].dropna()
         total_return = cumulative_returns[code].iloc[-1] - 1
